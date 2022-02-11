@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
                     builder.setActivity(MainActivity.this);
                     builder.setCallbacks(new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
 
-                        // this method is used when user receive OTP from Firebase
+                        // this method is used when user receive OTP from Firebase.
                         @Override
                         public void onVerificationCompleted(@NonNull PhoneAuthCredential phoneAuthCredential) {
                             Toast.makeText(MainActivity.this, "OTP Sent Successfully", Toast.LENGTH_SHORT).show();
