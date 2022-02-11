@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/purple"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/mobileET"
+        android:background="@color/dark_blue"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#80FFFFFF"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/enter_mobile_number"
+        android:importantForAutofill="no" />
+
+
+    <EditText
+        android:visibility="gone"
+        android:textColorHint="#80FFFFFF"
+        android:id="@+id/otpET"
+        android:layout_marginTop="40dp"
+        android:background="@color/dark_blue"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="#FFFFFF"
+        android:hint="@string/enter_otp"
+        android:importantForAutofill="no"
+         />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/actionBtn"
+        android:background="@drawable/round_blue"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_height="wrap_content"
+        android:text="@string/send_otp"/>
+
+</LinearLayout>
